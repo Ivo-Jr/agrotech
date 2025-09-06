@@ -1,0 +1,63 @@
+import foodPlate from '../../assets/food-plate.png'
+import numberOne from '../../assets/number-1-icon.svg'
+import numberTwo from '../../assets/number-2-icon.svg'
+import numberThree from '../../assets/number-3-icon.svg'
+import numberFour from '../../assets/number-4-icon.svg'
+
+export const About = () => {
+  return (
+    <section className="w-full flex justify-center px-6 py-[120px]">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+        <div className="flex flex-col gap-6">
+          <h2 className="text-2xl font-bold text-green-900">Sobre o projeto</h2>
+          <p className="text-gray-600 text-[22px] w-[555px]">
+            O <span className="font-semibold">Foodlink</span> visa reduzir o desperdício de alimentos e <br /> 
+            aumentar a segurança alimentar. Por meio da <br /> 
+            tecnologia, promovemos sustentabilidade e <br/>
+            responsabilidade social.
+          </p>
+          <button className=" w-[150px] text-[22px] bg-green-500 text-white px-[5px] py-[7px] rounded-full shadow hover:bg-green-600 transition">
+            Cadastre-se
+          </button>
+        </div>
+
+        <div className="">
+          <img
+            src={foodPlate}
+            alt="Prato de alimentos"
+            className="w-[540px] h-[540px] object-contain"
+          />
+        </div>
+
+        <div className="flex flex-col gap-6 w-[580px]">
+          <h2 className="text-2xl font-bold">
+            <span>Como Funciona?</span>
+          </h2>
+          <ol className="flex flex-col gap-3 text-gray-700 text-[22px]">
+            <li className="flex items-start gap-2">
+              <img src={numberOne} alt="number-one" className="text-gray-500 mt-[1px] w-5 h-5" />
+              Crie sua conta de forma gratuita
+            </li>
+            <li className="flex items-start gap-2">
+              <img src={numberTwo} alt="number-two" className="text-gray-500 mt-[1px] w-5 h-5" />
+              <p>
+                Decida se deseja se cadastrar como{" "}
+                <span className="font-semibold">Doador</span> ou{" "} <br /> 
+                <span className="font-semibold">Beneficiário</span>
+              </p>
+            </li>
+            <li className="flex items-start gap-2">
+              <img src={numberThree} alt="number-three" className="text-gray-500 mt-[1px] w-5 h-5" />
+              Encontre quem precisa ou quem pode doar <br /> alimentos próximos a você
+            </li>
+            <li className="flex items-start gap-2">
+              <img src={numberFour} alt="number-four" className="text-gray-500 mt-[1px] w-5 h-5" />
+              Contribua para reduzir o desperdício e levar comida a quem mais
+              precisa
+            </li>
+          </ol>
+        </div>
+      </div>
+  </section>
+  )
+}
