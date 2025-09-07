@@ -3,11 +3,11 @@ import { CategoriaCardProps } from "../../interfaces";
 
 export const CategoriaCard = ({ titulo, imagem }: CategoriaCardProps) => {
   return (
-    <div className="relative w-[544px] h-[209px] flex rounded-xl ">
+    <div className="relative flex w-full max-w-[544px] h-[209px] rounded-xl ">
       <img
         src={imagem}
         alt={titulo}
-        className="absolute mb-5 inset-0 w-full h-full object-cover"
+        className="absolute mb-5 inset-0 w-full h-full object-cover rounded-xl"
       />
 
       <div className="absolute flex flex-col w-full h-full justify-center items-end p-6">

@@ -7,10 +7,10 @@ import numberFour from '../../assets/number-4-icon.svg'
 export const About = () => {
   return (
     <section className="w-full flex justify-center px-6 py-[120px]">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-        <div className="flex flex-col gap-6">
+      <div className="flex flex-col items-center justify-center gap-10 xl:flex-row">
+        <div className="flex flex-col items-center gap-6 text-center xl:text-left xl:items-start">
           <h2 className="text-2xl font-bold text-green-900">Sobre o projeto</h2>
-          <p className="text-gray-600 text-[22px] w-[555px]">
+          <p className="text-gray-600 text-base md:text-[22px] w-full max-w-[555px]">
             O <span className="font-semibold">Foodlink</span> visa reduzir o desperdício de alimentos e <br /> 
             aumentar a segurança alimentar. Por meio da <br /> 
             tecnologia, promovemos sustentabilidade e <br/>
@@ -21,7 +21,7 @@ export const About = () => {
           </button>
         </div>
 
-        <div className="">
+        <div>
           <img
             src={foodPlate}
             alt="Prato de alimentos"
@@ -29,11 +29,11 @@ export const About = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-6 w-[580px]">
+        <div className="flex flex-col items-center gap-6 w-full xl:items-start max-w-[580px]">
           <h2 className="text-2xl font-bold">
             <span>Como Funciona?</span>
           </h2>
-          <ol className="flex flex-col gap-3 text-gray-700 text-[22px]">
+          <ol className="flex flex-col gap-3 text-gray-700 text-base md:text-xl  md:text-2xl">
             <li className="flex items-start gap-2">
               <img src={numberOne} alt="number-one" className="text-gray-500 mt-[1px] w-5 h-5" />
               Crie sua conta de forma gratuita

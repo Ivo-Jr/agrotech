@@ -21,16 +21,14 @@ const handleSubmit = (e: React.FormEvent) => {
   };
 
   return (
-    <section className="flex flex-row justify-center w-full px-6 py-16 items-start gap-10">
-      <div className="text-center text-[22px] leading-[28px] w-[712px]">
-        <h2 className="font-bold text-green-950 mb-6 text-[35px]">Fale Conosco</h2>
+    <section className="flex flex-col justify-center items-center w-full px-6 py-16 gap-10 xl:flex-row">
+      <div className="flex flex-col justify-center text-center px-4 w-full max-w-[670px] text-base md:text-[22px] md:leading-[28px] ">
+        <h2 className="font-bold text-green-950 mb-6 text-3xl xl:text-[35px]">Fale Conosco</h2>
         <p className="text-gray-700 mb-4">
-          Tem dúvidas, sugestões ou quer fazer parte dessa rede que transforma
-          alimentos em esperança?
+          Tem dúvidas, sugestões ou quer fazer parte dessa rede que transforma alimentos em esperança?
         </p>
         <p className="text-gray-700 mb-4">
-          Nossa equipe está pronta para te ouvir. Preencha o formulário abaixo
-          ou entre em contato pelos nossos canais.
+          Nossa equipe está pronta para te ouvir. Preencha o formulário abaixo ou entre em contato pelos nossos canais.
         </p>
         <p className="text-green-950 font-semibold mb-4">
           Juntos podemos combater a fome e o desperdício de alimentos no Brasil!
@@ -39,24 +37,23 @@ const handleSubmit = (e: React.FormEvent) => {
           Entre em contato por meio do formulário abaixo ou envie um e-mail para{" "}
           <a
             href="mailto:contato@foodlink.com.br"
-            className="underline text-[22px]"
+            className="underline text-base md:text-[22px]"
           >
             contato@foodlink.com.br
           </a>
           .
         </p>
-        <p className="text-gray-700 mb-2 text-[22px] w-[712px]">
+        <p className="text-gray-700 mb-2">
           Atendimento disponível de segunda a sexta-feira, das 9h às 18h.
         </p>
-        <p className="text-gray-700 text-[22px] w-[712px]">
-          Juntos, podemos fortalecer nossa rede de solidariedade e transformar
-          ainda mais vidas.
+        <p className="text-gray-700">
+          Juntos, podemos fortalecer nossa rede de solidariedade e transformar ainda mais vidas.
         </p>
       </div>
 
       <form
         onSubmit={handleSubmit}
-        className="bg-white border border-green-600 rounded-lg shadow-md p-6 flex flex-col gap-4 w-[713px]"
+        className="bg-white border border-green-600 rounded-lg shadow-md p-6 flex flex-col gap-4 px-4 w-full max-w-[670px] xl:w-[713px]"
       >
         <div>
           <label className="block text-green-800 font-medium mb-1">Name</label>

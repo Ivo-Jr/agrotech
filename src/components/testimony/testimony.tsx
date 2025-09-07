@@ -3,15 +3,15 @@ import { testimonials } from "../../constants";
 
 export const Testimony = () => {
   return (
-    <section className="w-full px-6 py-16 text-center">
-      <h2 className="font-bold text-green-600 text-[45px]">
+    <section className="flex flex-col justify-center w-full px-6 py-16 text-center">
+      <h2 className="font-bold text-green-600 text-3xl md:text-[45px]">
         Impacto compartilhado
       </h2>
-      <p className="text-gray-500 mt-2 text-[22px]">
+      <p className="text-gray-500 mt-2 text-base md:text-[22px]">
         Cada alimento doado é um ato de amor que transforma vidas
       </p>
 
-      <div className="w-full justify-center items-center mt-12 flex flex-row gap-16">
+      <div className="flex flex-col justify-center items-center w-full  mt-12 gap-16 xl:flex-row">
         {testimonials.map((testimony) => (
           <div
             key={testimony.nome}

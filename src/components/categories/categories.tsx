@@ -1,24 +1,28 @@
 import heartIcon from '../../assets/heart-icon.svg';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { categories } from '../../constants';
+import tomateImg from '../../assets/tomato.svg'
+
 
 export const Categories = () => {
   return (
-    <section className="w-full px-6 py-12 text-center">
-      <div className='px-[200px]'>
-        <div className="flex flex-col items-start">
-          <h2 className="text-[45px] font-bold text-green-600">
+    <section className="w-full max-w-[1920px] mx-auto py-12 text-center">
+      <div className='flex flex-col items-center justify-center w-full 
+        md:items-start 
+        xl:pl-[200px] 
+      '>
+        <div className="flex items-center flex-col xl:items-start">
+          <h2 className="text-3xl lg:text-[45px] font-bold text-green-600">
             Categorias em Destaque
           </h2>
-          <p className="text-gray-500  mt-2 text-[22px]">
+          <p className="text-gray-500  mt-2 text-base md:text-[22px]">
             Descubra as categorias que fazem a diferença. Alimentos essenciais para
             quem mais precisa!
           </p>
         </div>
 
-        <div className="relative mt-[100px]">
-          <div className="keen-slider flex flex-row gap-4">
-            {categories.map((category) => (
+        <div className="relative flex items-center mt-[100px] max-w-[100vw] w-full px-3 overflow-auto">
+          <div className="flex flex-row items-end gap-4 h-[320px] w-full overflow-auto p-5">
+            {categories.map((category => (
               <div key={category.nome} className="flex justify-center">
                 <div className="relative w-[226px] h-[219px] flex justify-endgap-[25px] justify-end px-[20px] py-[35px] bg-white rounded-xl shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_7px_rgba(0,0,0,0.05)] p-4 flex-col items-center">
                   <img
@@ -37,19 +41,10 @@ export const Categories = () => {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            )))}
 
-          <button
-            className="absolute -left-[50px] top-1/2 -translate-y-1/2 bg-white shadow rounded-full p-2"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button
-            className="absolute -right-[15px] top-1/2 -translate-y-1/2 bg-white shadow rounded-full p-2"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
+
+          </div>
         </div>
       </div>
     </section>

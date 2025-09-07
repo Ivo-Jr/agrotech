@@ -11,17 +11,18 @@ import { ColaboradorCTA } from '../components/colaboratorCTA'
 export const Home = () => {
   return (
     <div>
-        <HeroSection />
-        <About />
-        <Categories />
-        <div className="flex justify-center items-center flex-row gap-5 w-full py-36">
-          {categoriasCard.map((card) => (
-            <CategoriaCard
-              key={card.titulo}
-              titulo={card.titulo}
-              imagem={card.imagem}
-            />
-          ))}
+      <HeroSection />
+      <Divisor width="w-full" marginTop="mt-0" marginBottom="mb-6" />
+      <About />
+      <Categories />
+      <div className="flex justify-center items-center flex-col gap-14 w-full py-36 px-6  xl:flex-row xl:gap-5">
+        {categoriasCard.map((card) => (
+          <CategoriaCard
+            key={card.titulo}
+            titulo={card.titulo}
+            imagem={card.imagem}
+          />
+        ))}
       </div>
       <Testimony />
       <TalkToUs />
