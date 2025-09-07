@@ -1,7 +1,5 @@
 import heartIcon from '../../assets/heart-icon.svg';
 import { categories } from '../../constants';
-import tomateImg from '../../assets/tomato.svg'
-
 
 export const Categories = () => {
   return (
